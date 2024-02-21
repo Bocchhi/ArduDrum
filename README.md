@@ -27,6 +27,6 @@ let's give an example. For ArduDrum_Time, if I set the cooldown length for 30ms,
 This prevents the noise and multiple triggers from one hit but it's not completely safe. For ArduDrum_Bounced if I set the cooldown length to 10ms, after the hit, the program won't trigger until all the values read from the 
 piezo disc are lower than the threshold for an uninterrupted given time. Like all the values let's say have to be lower than 150 for an uninterrupted 10ms duration. This makes sure the bounce is completed in a well-mannered and safe way. 
 But it sacrifices more ready time to detect hits. So, when you are using the program if you experience more triggers than expected, use ArduDrum_Bounced to ensure the bounce is complete, otherwise, stick with the ArduDrum_Time to have the ability to trigger
-the piezo at more frequent intervals. If you make two hits at a very close range and only trigger the program once, you need to use ArduDrum_Time to pick the close-range hits etc. Choose according to your needs and pick the one that best suits your needs.
+the piezo at more frequent intervals. If you make two hits at a very close range and only trigger the program once, you need to use ArduDrum_Time to pick the close-range hits etc. Pick the one that best suits your needs.
 
 P.S. If there is an object on piezo discs that applies force constantly to it and squishes with its weight. Like, even a small rubber. The triggering would be more accurate and ArduDrum_Time probably won't have the problem which is triggering multiple times.
