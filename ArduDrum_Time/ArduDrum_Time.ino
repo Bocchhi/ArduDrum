@@ -199,9 +199,8 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 
 void setup() {
   
-  //BasePiezo BP_HiHat = create_BP(BP_HIHAT);
+  BasePiezo BP_HiHat = create_BP(BP_HIHAT);
   BasePiezo BP_Snare = create_BP(BP_SNARE);
-  /*
   BasePiezo BP_Rim = create_BP(BP_RIM);
   BasePiezo BP_Bass = create_BP(BP_BASS);
   BasePiezo BP_TomHi = create_BP(BP_TOMHI);
@@ -220,9 +219,7 @@ void setup() {
   SinglePiezo SP_CrashL = create_SP(49, BP_CrashL);
   SinglePiezo SP_CrashR = create_SP(57, BP_CrashR);
   SinglePiezo SP_China = create_SP(52, BP_China);
-  */
   SinglePiezo SP_Snare = create_SP(38, BP_Snare);
-  /*
   SinglePiezo SP_Rim = create_SP(37, BP_Rim);
   SinglePiezo SP_Ride = create_SP(51, BP_Ride);
   SinglePiezo SP_Bell = create_SP(53, BP_Bell);
@@ -230,7 +227,7 @@ void setup() {
   DoublePiezo DP_Snare = create_DP(100, SP_Snare, SP_Rim);
   DoublePiezo DP_Ride = create_DP(SENTINEL_VALUE, SP_Ride, SP_Bell);
 
-  SinglePiezoTCRT SPTCRT_HiHat = create_SPTCRT(SPTCRT_HIHAT, BP_HiHat);*/
+  SinglePiezoTCRT SPTCRT_HiHat = create_SPTCRT(SPTCRT_HIHAT, BP_HiHat);
   
   MIDI.begin(MIDI_OUTPUT_CHANNEL);
   Serial.begin(BAUD_RATE);
